@@ -1,0 +1,24 @@
+apps:
+  flacted:
+    command: 'bin/flacted'
+    plugs:
+      - 'home'
+      - 'network'
+      - 'network-bind'
+base: 'core24'
+confinement: 'strict'
+description: 'Front-end to metaflac to set common FLAC tags.'
+grade: 'stable'
+name: 'flacted'
+parts:
+  flacted:
+    plugin: 'poetry'
+    source: '.'
+    stage-packages: []
+platforms:
+  amd64:
+    build-on: 'amd64'
+  arm64:
+    build-on: 'arm64'
+summary: 'Front-end to metaflac to set common FLAC tags.'
+version: '0.0.0'
