@@ -8,12 +8,13 @@ import logging
 import subprocess as sp
 import sys
 
-if TYPE_CHECKING:
-    from collections.abc import Callable
-
 from bascom import setup_logging
 from deltona.constants import CONTEXT_SETTINGS
 import click
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
+
 
 log = logging.getLogger(__name__)
 
