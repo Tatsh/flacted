@@ -4,6 +4,7 @@ appimage
 appinfo
 asyncio
 autodoc
+automodule
 bascom
 bsky
 cdrommsf
@@ -15,6 +16,7 @@ coverallsapp
 ctypes
 dashcam
 dataclasses
+datatable
 datatables
 debugpy
 docstrings
@@ -26,8 +28,11 @@ esbenp
 esbonio
 filevers
 flacted
+fontawesome
 foxundermoon
 functools
+genindex
+globaltoc
 hoverxref
 htmlcov
 intersphinx
@@ -45,6 +50,7 @@ linters
 manylinux
 metaflac
 mktemp
+modindex
 modtime
 monkeypatch
 myproject
@@ -79,10 +85,10 @@ snapcore
 snapcraft
 softprops
 soupsieve
+sphinxcontrib
 syft
 tatsh
 testpaths
-toctree
 tomlkit
 tomllib
 tomlq
