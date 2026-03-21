@@ -9,6 +9,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [unreleased]
 
+### Changed
+
+- Reduced transitive dependencies by dropping the `[media]` extra from the `deltona` dependency.
+
 ## [0.0.1] - 2026-03-21
 
 ### Added

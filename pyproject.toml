@@ -38,12 +38,7 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Typing :: Typed",
 ]
-dependencies = [
-  "bascom>=0.1.2",
-  "click>=8.3.1",
-  "deltona[media]>=0.1.4",
-  "typing-extensions>=4.15.0",
-]
+dependencies = ["bascom>=0.1.2", "click>=8.3.1", "deltona>=0.1.4", "typing-extensions>=4.15.0"]
 description = "Front-end to metaflac to set common FLAC tags."
 keywords = ["flac", "metaflac", "tagging"]
 license = "MIT"
