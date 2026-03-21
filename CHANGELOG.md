@@ -9,9 +9,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [unreleased]
 
-## [0.0.1] - 2026-00-00
+## [0.0.1] - 2026-03-21
 
-First version.
+### Added
 
-[unreleased]: https://github.com/Tatsh/flacted/compare/v0.0.0...HEAD
-[0.0.1]: https://github.com/Tatsh/flacted/releases/tag/v0.0.0
+- `flacted` command to set common FLAC tags via metaflac.
+- Alias commands: `flac-album`, `flac-artist`, `flac-genre`, `flac-title`, `flac-track`,
+  `flac-year`.
+
+[unreleased]: https://github.com/Tatsh/flacted/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/Tatsh/flacted/releases/tag/v0.0.1
