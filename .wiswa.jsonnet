@@ -7,7 +7,6 @@ local utils = import 'utils.libjsonnet';
   version: '0.0.0',
   want_main: true,
   want_man: true,
-  supported_python_versions: ['3.12', '3.13'],
   has_multiple_entry_points: true,
   pyproject+: {
     project+: {
@@ -25,7 +24,7 @@ local utils = import 'utils.libjsonnet';
       poetry+: {
         dependencies+: {
           deltona: {
-            python: '>=3.12,<3.14',
+            extras: ['media'],
             version: utils.latestPypiPackageVersionCaret('deltona'),
           },
         },

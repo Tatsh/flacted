@@ -7,12 +7,19 @@ apps:
       - 'network-bind'
 base: 'core24'
 confinement: 'strict'
+contact: 'https://github.com/Tatsh/flacted/issues'
 description: 'Front-end to metaflac to set common FLAC tags.'
+donation: 'https://buymeacoffee.com/Tatsh'
 grade: 'stable'
+issues: 'https://github.com/Tatsh/flacted/issues'
+license: 'MIT'
 name: 'flacted'
 parts:
   flacted:
-    plugin: 'poetry'
+    build-packages: []
+    plugin: 'python'
+    python-packages:
+      - '.'
     source: '.'
     stage-packages: []
 platforms:
@@ -20,5 +27,8 @@ platforms:
     build-on: 'amd64'
   arm64:
     build-on: 'arm64'
+source-code: 'https://github.com/Tatsh/flacted'
 summary: 'Front-end to metaflac to set common FLAC tags.'
+title: 'flacted'
 version: '0.0.0'
+website: 'https://tatsh.github.io/flacted/'

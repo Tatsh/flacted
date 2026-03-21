@@ -12,9 +12,8 @@ if TYPE_CHECKING:
     import pytest
 
 
-def test_flacted_main_show_tag(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_flacted_main_show_tag(mocker: MockerFixture, runner: CliRunner, tmp_path: Path,
+                               monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     monkeypatch.setattr('sys.argv', ['flac-title', str(f)])
@@ -23,9 +22,8 @@ def test_flacted_main_show_tag(
     assert result.exit_code == 0
 
 
-def test_flacted_main_show_tag_year(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_flacted_main_show_tag_year(mocker: MockerFixture, runner: CliRunner, tmp_path: Path,
+                                    monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     monkeypatch.setattr('sys.argv', ['flac-year', str(f)])
@@ -34,9 +32,8 @@ def test_flacted_main_show_tag_year(
     assert result.exit_code == 0
 
 
-def test_flacted_main_show_tag_track(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_flacted_main_show_tag_track(mocker: MockerFixture, runner: CliRunner, tmp_path: Path,
+                                     monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     f2 = tmp_path / 'file2.flac'
@@ -49,9 +46,9 @@ def test_flacted_main_show_tag_track(
     assert result.exit_code == 0
 
 
-def test_flacted_main_show_tag_track_invalid_value_for_int(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_flacted_main_show_tag_track_invalid_value_for_int(mocker: MockerFixture, runner: CliRunner,
+                                                           tmp_path: Path,
+                                                           monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     monkeypatch.setattr('sys.argv', ['flac-track', str(f)])
@@ -62,8 +59,8 @@ def test_flacted_main_show_tag_track_invalid_value_for_int(
 
 
 def test_flacted_main_show_tag_track_invalid_metaflac_output(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+        mocker: MockerFixture, runner: CliRunner, tmp_path: Path,
+        monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     monkeypatch.setattr('sys.argv', ['flac-track', str(f)])
@@ -73,9 +70,8 @@ def test_flacted_main_show_tag_track_invalid_metaflac_output(
     assert not result.output.strip()
 
 
-def test_flacted_main_set_tags(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_flacted_main_set_tags(mocker: MockerFixture, runner: CliRunner, tmp_path: Path,
+                               monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     mocker.patch('flacted.cli.sp.run', return_value=mocker.MagicMock(stdout=''))
@@ -98,9 +94,8 @@ def test_flacted_main_set_tags(
     assert result.exit_code == 0
 
 
-def test_flacted_main_set_tags_no_destroy(
-    mocker: MockerFixture, runner: CliRunner, tmp_path: Path, monkeypatch: pytest.MonkeyPatch
-) -> None:
+def test_flacted_main_set_tags_no_destroy(mocker: MockerFixture, runner: CliRunner, tmp_path: Path,
+                                          monkeypatch: pytest.MonkeyPatch) -> None:
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     mocker.patch('flacted.cli.sp.run', return_value=mocker.MagicMock(stdout=''))

@@ -15,7 +15,6 @@ import click
 if TYPE_CHECKING:
     from collections.abc import Callable
 
-
 log = logging.getLogger(__name__)
 
 __all__ = ('flacted_main',)
@@ -34,7 +33,7 @@ def _show_tag_values(
         for tag in possible:
             val = metaflac(f'--show-tag={tag}', filename).stdout.strip()
             try:
-                val = val[len(tag) + 1 :].splitlines()[0].strip()
+                val = val[len(tag) + 1:].splitlines()[0].strip()
             except IndexError:
                 val = ''
             if not val:
@@ -57,9 +56,10 @@ def _show_tag_values(
 @click.command(context_settings=CONTEXT_SETTINGS)
 @click.argument('files', nargs=-1, type=click.Path(exists=True, dir_okay=False, path_type=Path))
 @click.option('-A', '--album', help='Album.')
-@click.option(
-    '-D', '--delete-all-before', is_flag=True, help='Delete all existing tags before processing.'
-)
+@click.option('-D',
+              '--delete-all-before',
+              is_flag=True,
+              help='Delete all existing tags before processing.')
 @click.option('-T', '--track', type=int, help='Track number.')
 @click.option('-a', '--artist', help='Track artist.')
 @click.option('-d', '--debug', is_flag=True, help='Enable debug output.')
@@ -104,12 +104,12 @@ def flacted_main(
     clean_up_args.append('--remove-all-tags')
     clean_up_args += (str(x) for x in files)
     for key, value in {
-        'album': album,
-        'artist': artist,
-        'genre': genre,
-        'title': title,
-        'track': track,
-        'year': year,
+            'album': album,
+            'artist': artist,
+            'genre': genre,
+            'title': title,
+            'track': track,
+            'year': year,
     }.items():
         if not value:
             continue
