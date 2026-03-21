@@ -23,15 +23,18 @@ local utils = import 'utils.libjsonnet';
     tool+: {
       poetry+: {
         dependencies+: {
-          deltona: {
-            extras: ['media'],
-            version: utils.latestPypiPackageVersionCaret('deltona'),
-          },
+          deltona: utils.latestPypiPackageVersionCaret('deltona'),
         },
       },
     },
   },
   copilot: {
     intro: 'flacted is a front-end to metaflac to set common FLAC tags.',
+  },
+  pyinstaller+: {
+    include_only: ['flacted'],
+  },
+  appimage+: {
+    include_only: ['flacted'],
   },
 }
