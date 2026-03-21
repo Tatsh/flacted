@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from operator import itemgetter
 from pathlib import Path
 import sys
@@ -15,7 +15,7 @@ with (Path(__file__).parent.parent / 'pyproject.toml').open(newline='\n', encodi
 authors = [f'{d["name"]} <{d["email"]}>' for d in authors_list]
 sys.path.insert(0, str(Path(__file__).parent.parent))
 author = f'{authors_list[0]["name"]} <{authors_list[0]["email"]}>'
-copyright = str(datetime.now(UTC).year)  # noqa: A001
+copyright = str(datetime.now(timezone.utc).year)  # noqa: A001
 project = name
 release = f'v{version}'
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx.ext.napoleon', 'sphinx_click']
