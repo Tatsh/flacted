@@ -4,7 +4,7 @@ local utils = import 'utils.libjsonnet';
   description: 'Front-end to metaflac to set common FLAC tags.',
   keywords: ['flac', 'metaflac', 'tagging'],
   project_name: 'flacted',
-  version: '0.0.1',
+  version: '0.0.2',
   want_main: true,
   want_man: true,
   has_multiple_entry_points: true,

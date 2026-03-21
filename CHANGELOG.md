@@ -9,6 +9,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [unreleased]
 
+## [0.0.2] - 2026-03-21
+
 ### Changed
 
 - Reduced transitive dependencies by dropping the `[media]` extra from the `deltona` dependency.
@@ -21,5 +23,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Alias commands: `flac-album`, `flac-artist`, `flac-genre`, `flac-title`, `flac-track`,
   `flac-year`.
 
-[unreleased]: https://github.com/Tatsh/flacted/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/Tatsh/flacted/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/Tatsh/flacted/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/Tatsh/flacted/releases/tag/v0.0.1
