@@ -4,7 +4,6 @@ appimage
 appinfo
 asyncio
 autodoc
-automodule
 bascom
 bsky
 cdrommsf
