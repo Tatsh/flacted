@@ -85,7 +85,7 @@ def flacted_main(
 
     def metaflac(*args: Any, **kwargs: Any) -> sp.CompletedProcess[str]:
         return sp.run(
-            ('metaflac', *cast('tuple[str, ...]', args)),
+            ('metaflac', *cast('tuple[str, ...]', args)),  # noqa: S607
             capture_output=not debug,
             **kwargs,
             check=True,

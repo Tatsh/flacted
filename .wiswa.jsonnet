@@ -1,6 +1,7 @@
 local utils = import 'utils.libjsonnet';
 
 {
+  uses_user_defaults: true,
   description: 'Front-end to metaflac to set common FLAC tags.',
   keywords: ['flac', 'metaflac', 'tagging'],
   project_name: 'flacted',
@@ -27,9 +28,6 @@ local utils = import 'utils.libjsonnet';
         },
       },
     },
-  },
-  copilot: {
-    intro: 'flacted is a front-end to metaflac to set common FLAC tags.',
   },
   pyinstaller+: {
     include_only: ['flacted'],
