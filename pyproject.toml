@@ -86,6 +86,7 @@ version_files = [
   "flacted/__init__.py",
   "man/flacted.1",
   "package.json",
+  "sh.tat.flacted.yml",
   "snapcraft.yaml",
 ]
 version_provider = "pep621"

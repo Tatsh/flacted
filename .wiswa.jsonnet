@@ -7,6 +7,8 @@ local utils = import 'utils.libjsonnet';
   project_name: 'flacted',
   version: '0.0.2',
   want_main: true,
+  want_flatpak: true,
+  publishing+: { flathub: 'sh.tat.flacted' },
   want_man: true,
   has_multiple_entry_points: true,
   pyproject+: {
