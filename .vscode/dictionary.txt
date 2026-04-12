@@ -31,6 +31,7 @@ esbenp
 esbonio
 filevers
 flacted
+flathub
 foxundermoon
 functools
 genindex
