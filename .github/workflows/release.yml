@@ -38,7 +38,7 @@ jobs:
           GH_TOKEN: '${{ github.token }}'
         if: "steps.check.outputs.ready == 'true'"
         name: 'Publish release'
-        run: ': "${tag:?missing tag from prior step}" && gh release edit "$tag" --draft=false'
+        run: 'gh release edit "$tag" --draft=false'
 name: 'Release'
 'on':
   workflow_run:
