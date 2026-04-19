@@ -20,11 +20,8 @@ log = logging.getLogger(__name__)
 __all__ = ('flacted_main',)
 
 
-def _show_tag_values(
-    metaflac: Callable[..., sp.CompletedProcess[str]],
-    files: tuple[Path, ...],
-    tag_requested: str,
-) -> None:
+def _show_tag_values(metaflac: Callable[..., sp.CompletedProcess[str]], files: tuple[Path, ...],
+                     tag_requested: str) -> None:
     possible: tuple[str, ...] = (tag_requested.title(), tag_requested.upper(), tag_requested)
     if tag_requested == 'year':
         possible += ('Date', 'DATE', 'date')
@@ -67,19 +64,17 @@ def _show_tag_values(
 @click.option('-p', '--picture', help='Cover artwork to attach.')
 @click.option('-t', '--title', help='Track title.')
 @click.option('-y', '--year', type=int, help='Year.')
-def flacted_main(
-    files: tuple[Path, ...],
-    album: str | None = None,
-    artist: str | None = None,
-    genre: str | None = None,
-    picture: str | None = None,
-    title: str | None = None,
-    track: int | None = None,
-    year: int | None = None,
-    *,
-    debug: bool = False,
-    delete_all_before: bool = False,
-) -> None:
+def flacted_main(files: tuple[Path, ...],
+                 album: str | None = None,
+                 artist: str | None = None,
+                 genre: str | None = None,
+                 picture: str | None = None,
+                 title: str | None = None,
+                 track: int | None = None,
+                 year: int | None = None,
+                 *,
+                 debug: bool = False,
+                 delete_all_before: bool = False) -> None:
     """Front-end to metaflac to set common tags."""  # noqa: DOC501
     setup_logging(debug=debug, loggers={'flacted': {}})
 
@@ -89,8 +84,7 @@ def flacted_main(
             capture_output=not debug,
             **kwargs,
             check=True,
-            text=True,
-        )
+            text=True)
 
     invoked_as = Path(sys.argv[0]).name
     if invoked_as != 'flacted' and len(files) > 0:
@@ -109,7 +103,7 @@ def flacted_main(
             'genre': genre,
             'title': title,
             'track': track,
-            'year': year,
+            'year': year
     }.items():
         if not value:
             continue

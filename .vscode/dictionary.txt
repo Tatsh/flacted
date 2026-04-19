@@ -27,6 +27,7 @@ doctrees
 dunder
 eeyore
 elif
+esac
 esbenp
 esbonio
 filevers
@@ -65,7 +66,6 @@ norecursedirs
 notarytool
 npmjs
 numpy
-numpydoc
 onefile
 oneline
 pathlib
@@ -83,7 +83,9 @@ pypa
 pypi
 pyproject
 pytest
+pythonhosted
 regen
+ripgreprc
 rstcheck
 schemafile
 sdist
@@ -103,6 +105,7 @@ tomlkit
 tomllib
 tomlq
 tonumber
+tostring
 tracknumber
 ubyte
 udvare

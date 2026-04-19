@@ -4,20 +4,18 @@ requires = ["hatchling"]
 
 [dependency-groups]
 dev = [
-  "commitizen>=4.13.9",
+  "commitizen>=4.13.10",
   "cz-path>=0.0.6",
-  "mypy>=1.20.0",
-  "ruff>=0.15.9",
-  "ty>=0.0.29",
+  "mypy>=1.20.1",
+  "ruff==0.15.11",
+  "ty>=0.0.31",
   "yapf>=0.43.0",
 ]
 docs = [
   "autodoc-pydantic>=2.2.0",
   "doc8>=2.0.0",
-  "docutils<0.22",
   "enum-tools[sphinx]>=0.13.0",
-  "esbonio>=1.1.0",
-  "numpydoc>=1.10.0",
+  "esbonio>=2.0.0",
   "restructuredtext-lint>=2.0.2",
   "sphinx-click>=6.2.0",
   "sphinx-datatables>=1.0.0",
@@ -30,7 +28,7 @@ tests = [
   "mock>=5.2.0",
   "pytest-cov>=7.1.0",
   "pytest-mock>=3.15.1",
-  "pytest>=9.0.2",
+  "pytest>=9.0.3",
 ]
 
 [project]
@@ -104,7 +102,7 @@ omit = ["conftest.py", "flacted/__main__.py", "tests.py", "tests/*/test_*.py", "
 max-line-length = 100
 
 [tool.hatch.build.targets.sdist]
-include = ["flacted", "tests"]
+include = ["flacted", "man", "tests"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["flacted"]
@@ -247,4 +245,4 @@ split_penalty_logical_operator = 300
 use_tabs = false
 
 [tool.yapfignore]
-ignore_patterns = [".venv/**", "node_modules/**"]
+ignore_patterns = [".venv", ".wiswa-ci", "node_modules"]

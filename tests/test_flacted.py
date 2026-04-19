@@ -75,20 +75,8 @@ def test_flacted_main_set_tags(mocker: MockerFixture, runner: CliRunner, tmp_pat
     f = tmp_path / 'file.flac'
     f.write_text('dummy')
     mocker.patch('flacted.cli.sp.run', return_value=mocker.MagicMock(stdout=''))
-    args = (
-        str(f),
-        '--album',
-        'A',
-        '--artist',
-        'B',
-        '-D',
-        '-y',
-        '2023',
-        '-T',
-        '1',
-        '-p',
-        'image.jpg',
-    )
+    args = (str(f), '--album', 'A', '--artist', 'B', '-D', '-y', '2023', '-T', '1', '-p',
+            'image.jpg')
     monkeypatch.setattr('sys.argv', ['flacted', *args])
     result = runner.invoke(flacted_main, args)
     assert result.exit_code == 0
