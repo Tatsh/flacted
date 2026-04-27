@@ -9,6 +9,21 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [unreleased]
 
+## [0.0.3] - 2026-04-26
+
+### Added
+
+- CI workflows for building Flatpak packages and publishing to Flathub.
+
+### Changed
+
+- Consolidated assistant rules under the `.claude/` directory.
+- Synchronised the project with the latest cruft template updates.
+- Updated the spell-check dictionary.
+- Bumped development dependencies, including `ruff` from 0.15.7 to 0.15.8.
+- Bumped transitive dependencies `brace-expansion`, `picomatch`, and `requests`.
+- Added explicit configuration flags to the `check-formatting` script.
+
 ## [0.0.2] - 2026-03-21
 
 ### Changed
@@ -23,6 +38,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Alias commands: `flac-album`, `flac-artist`, `flac-genre`, `flac-title`, `flac-track`,
   `flac-year`.
 
-[unreleased]: https://github.com/Tatsh/flacted/compare/v0.0.2...HEAD
+[unreleased]: https://github.com/Tatsh/flacted/compare/v0.0.3...HEAD
+[0.0.3]: https://github.com/Tatsh/flacted/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/Tatsh/flacted/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/Tatsh/flacted/releases/tag/v0.0.1
