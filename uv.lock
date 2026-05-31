@@ -601,7 +601,7 @@ wheels = [
 
 [[package]]
 name = "deltona"
-version = "0.2.3"
+version = "0.2.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -614,9 +614,9 @@ dependencies = [
     { name = "tomlkit" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f7/be/5242e44656ca8ec5b7838b99fe43253867eac6ae0382cb3aaa930113a447/deltona-0.2.3.tar.gz", hash = "sha256:2ca698b65dfb4bf163fb0ed9714e5f3d91dd60ca02d776845428481224a4e4c1", size = 136485, upload-time = "2026-05-08T23:39:30.219Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/cd/cfd4cc728a4b165218d7770f84b20f06e710f3e2a0cf69a4991ca4f8fc34/deltona-0.2.4.tar.gz", hash = "sha256:aa856c2e1256158585b4cb9ed23fabd27e7da79af075baeacf2f0eab13aa9776", size = 142209, upload-time = "2026-05-24T01:49:07.543Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/55/7f/183f57a4ed3c5c5fabe27e7dc476be96bf595710a6c9892c67e5c940b2e9/deltona-0.2.3-py3-none-any.whl", hash = "sha256:4bb2bab370931d0949a39bc557b79a1d95107992ee77113376b34b89ba3382d9", size = 96437, upload-time = "2026-05-08T23:39:28.634Z" },
+    { url = "https://files.pythonhosted.org/packages/29/65/1e466b0dbe687cba0824345c8e067d780bc3e6b95a6517a72a124ebc8112/deltona-0.2.4-py3-none-any.whl", hash = "sha256:482795848d37a7253a3b7d533fd80646d99d96f13464e4bb980d67a5ff86ef82", size = 99117, upload-time = "2026-05-24T01:49:06.1Z" },
 ]
 
 [[package]]
