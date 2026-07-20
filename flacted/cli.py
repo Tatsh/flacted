@@ -75,12 +75,13 @@ def flacted_main(files: tuple[Path, ...],
                  *,
                  debug: bool = False,
                  delete_all_before: bool = False) -> None:
-    """Front-end to metaflac to set common tags."""  # noqa: DOC501
+    """Front-end to metaflac to set common tags."""  # ruff:ignore[docstring-missing-exception]
     setup_logging(debug=debug, loggers={'flacted': {}})
 
     def metaflac(*args: Any, **kwargs: Any) -> sp.CompletedProcess[str]:
         return sp.run(
-            ('metaflac', *cast('tuple[str, ...]', args)),  # noqa: S607
+            ('metaflac',
+             *cast('tuple[str, ...]', args)),  # ruff:ignore[start-process-with-partial-path]
             capture_output=not debug,
             **kwargs,
             check=True,
