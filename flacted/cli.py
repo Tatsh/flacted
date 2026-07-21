@@ -79,13 +79,11 @@ def flacted_main(files: tuple[Path, ...],
     setup_logging(debug=debug, loggers={'flacted': {}})
 
     def metaflac(*args: Any, **kwargs: Any) -> sp.CompletedProcess[str]:
-        return sp.run(
-            ('metaflac',
-             *cast('tuple[str, ...]', args)),  # ruff:ignore[start-process-with-partial-path]
-            capture_output=not debug,
-            **kwargs,
-            check=True,
-            text=True)
+        return sp.run(('metaflac', *cast('tuple[str, ...]', args)),
+                      capture_output=not debug,
+                      **kwargs,
+                      check=True,
+                      text=True)
 
     invoked_as = Path(sys.argv[0]).name
     if invoked_as != 'flacted' and len(files) > 0:
