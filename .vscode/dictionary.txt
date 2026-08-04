@@ -37,6 +37,7 @@ foxundermoon
 functools
 genindex
 globaltoc
+handoff
 hoverxref
 htmlcov
 intersphinx
@@ -64,7 +65,6 @@ mypy
 namedtuples
 norecursedirs
 notarytool
-npmjs
 numpy
 onefile
 oneline
@@ -72,6 +72,7 @@ pathlib
 pavelzw
 pipx
 plistlib
+preapproved
 prodvers
 pycache
 pydantic
@@ -95,9 +96,9 @@ shellformat
 signtool
 snapcore
 snapcraft
-softprops
 soupsieve
 sphinxcontrib
+statusline
 syft
 tatsh
 testpaths
@@ -109,13 +110,18 @@ tostring
 tracknumber
 ubyte
 udvare
+undraft
+undrafted
 vendored
 venv
 vers
 virtualenv
+winget
 wiswa
 wiswa's
+worktree
 xcrun
 yapf
 yapfignore
 yarnrc
+zizmor
