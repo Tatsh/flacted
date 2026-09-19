@@ -51,16 +51,16 @@ wheels = [
 
 [[package]]
 name = "anyio"
-version = "4.14.2"
+version = "4.15.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "exceptiongroup", marker = "python_full_version < '3.11'" },
     { name = "idna" },
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.15'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/61/cc/a381afa6efea9f496eff839d4a6a1aed3bfafc7b3ab4b0d1b243a12573dd/anyio-4.14.2.tar.gz", hash = "sha256:cfa139f3ed1a23ee8f88a145ddb5ac7605b8bbfd8592baacd7ce3d8bb4313c7f", size = 260176, upload-time = "2026-07-12T20:29:07.082Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz", hash = "sha256:9f28306018cbd6d329e64a36d58256edff76dd996fe423bc957326e578b82a94", size = 276966, upload-time = "2026-09-05T10:42:39.44Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/da/35/f2287558c17e29fafc8ef3daf819bb9834061cfa43bff8014f7df7f63bdc/anyio-4.14.2-py3-none-any.whl", hash = "sha256:9f505dda5ac9f0c8309b5e8bd445a8c2bf7246f3ce950121e45ea15bc41d1494", size = 125813, upload-time = "2026-07-12T20:29:05.763Z" },
+    { url = "https://files.pythonhosted.org/packages/12/b8/4bd346e22b28902df4d651910f5242c28d84e4a5c2435ca5c3f797ed7e2e/anyio-4.15.1-py3-none-any.whl", hash = "sha256:6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101", size = 132079, upload-time = "2026-09-05T10:42:37.923Z" },
 ]
 
 [[package]]
@@ -569,7 +569,7 @@ wheels = [
 
 [[package]]
 name = "deltona"
-version = "0.3.0"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -579,12 +579,13 @@ dependencies = [
     { name = "click" },
     { name = "niquests" },
     { name = "pathspec" },
+    { name = "rich" },
     { name = "tomlkit" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b9/6d/71d10588fc5dc55f02f5effb6ddd671aef4719703ac8cf1d7994a2a1f148/deltona-0.3.0.tar.gz", hash = "sha256:b31ab48db99e302ebd1a21f521812b4bba93616502f803b9b501bdc0894ab530", size = 168088, upload-time = "2026-08-21T14:26:37.376Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/84/99/907fdd17011b6f8482f57606e43a1fbfae89f255d75e778b837a36349b64/deltona-0.5.0.tar.gz", hash = "sha256:aaeea9ba72867ab4ec4253af1d6a5a5bd9333948c4aa2092e3786cdd0ad19b18", size = 316115, upload-time = "2026-09-10T16:44:27.552Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ae/4c/5293fae5b2dba6efe098e2a1c305ea72f296ad3a53a17a3acbd6da1446ee/deltona-0.3.0-py3-none-any.whl", hash = "sha256:e5d228d3a9fab5d7a46094d391ef7f669a945eac5407a93d700ceba0f873e413", size = 114737, upload-time = "2026-08-21T14:26:35.715Z" },
+    { url = "https://files.pythonhosted.org/packages/f5/94/d4e7b05ce96dad22b9b12999f5248581a42eeae07d69a5e85a390f524d00/deltona-0.5.0-py3-none-any.whl", hash = "sha256:e60c8c674b8760ed88dc881a8dbcfaf73e5165759a34ff88f9d91e97e922a763", size = 209041, upload-time = "2026-09-10T16:44:25.747Z" },
 ]
 
 [[package]]
@@ -1326,16 +1327,16 @@ wheels = [
 
 [[package]]
 name = "niquests"
-version = "3.21.0"
+version = "3.21.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "charset-normalizer" },
     { name = "urllib3-future" },
     { name = "wassima", marker = "sys_platform != 'emscripten'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/03/1c/836ad34fb18fac781722019100e2bffd81eb9a0011d7a91c434a7094460d/niquests-3.21.0.tar.gz", hash = "sha256:5b7d10a05f4c7ed08cede0af74f492ae7a8a5a71291833d029e23365fc3ea80a", size = 1070211, upload-time = "2026-07-29T10:26:24.993Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/21/e0/bf0dfc98ff4fd6dc1f4872972c14688f159013ebecda27c71ccb42bfdff4/niquests-3.21.1.tar.gz", hash = "sha256:8ba6ee8712570ae41dfc59ac2ac7e509dcde660c6cc47078b43be423a2f99e64", size = 1081377, upload-time = "2026-08-28T09:36:36.291Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/23/9b/c08403f905f9aaffc74b483fbb0ad4cc372d1da22cccb4ca771a3e65a185/niquests-3.21.0-py3-none-any.whl", hash = "sha256:dbea441b9e9d5d755e02caa2b57b94cdb97b23d754ead21b80a4ac18ef66805f", size = 230382, upload-time = "2026-07-29T10:26:23.194Z" },
+    { url = "https://files.pythonhosted.org/packages/be/fe/fca859af3c83c718d8228c918716b6b32dcda96ee94980cb9849a415e1c9/niquests-3.21.1-py3-none-any.whl", hash = "sha256:ac1ff8061cb480cdaad07f08b95cf21ee0a68ef21fbc2b6ddf5afff8e0d0072e", size = 230450, upload-time = "2026-08-28T09:36:34.682Z" },
 ]
 
 [[package]]
