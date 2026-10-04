@@ -108,7 +108,6 @@ statusline
 syft
 tatsh
 testpaths
-tomlkit
 tomllib
 tomlq
 tonumber
