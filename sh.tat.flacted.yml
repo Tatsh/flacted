@@ -15,8 +15,9 @@ modules:
     buildsystem: 'simple'
     name: 'flacted'
     sources:
-      - path: '.'
-        type: 'dir'
+      - tag: 'v0.0.3'
+        type: 'git'
+        url: 'https://github.com/Tatsh/flacted'
 runtime: 'org.freedesktop.Platform'
 runtime-version: '26.08'
 sdk: 'org.freedesktop.Sdk'
